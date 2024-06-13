@@ -1,11 +1,9 @@
-using System;
 using Xunit;
 
 namespace CesarCipher.Tests
 {
     public class CipherTests
     {
-
         [Fact]
         public void Encrypt_ShouldHandleNonAlphabeticCharacters()
         {
@@ -35,13 +33,14 @@ namespace CesarCipher.Tests
             // Assert
             Assert.Equal(expected, result);
         }
+
         [Fact]
-        public void Encrypt_ShouldHandleUppercaseLetters()
+        public void Encrypt_ShouldHandleLowercaseLetters()
         {
             // Arrange
-            string input = "WORLD, HELLO!";
+            string input = "world, hello!";
             int shift = 7;
-            string expected = "DVYSK, OLSSV!";
+            string expected = "dvysk, olssv!";
 
             // Act
             string result = Cipher.Encrypt(input, shift);
@@ -49,6 +48,19 @@ namespace CesarCipher.Tests
             // Assert
             Assert.Equal(expected, result);
         }
-    
+         [Fact]
+        public void Encrypt_ShouldHandleLargeShift()
+        {
+            // Arrange
+            string input = "Hello, World!";
+            int shift = 25; 
+            string expected = "Gdkkn, Vnqkc!";
+
+            // Act
+            string result = Cipher.Encrypt(input, shift);
+
+            // Assert
+            Assert.Equal(expected, result);
+        }
     }
 }
