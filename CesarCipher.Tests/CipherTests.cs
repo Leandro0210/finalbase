@@ -35,5 +35,20 @@ namespace CesarCipher.Tests
             // Assert
             Assert.Equal(expected, result);
         }
+        [Fact]
+        public void Encrypt_ShouldHandleUppercaseLetters()
+        {
+            // Arrange
+            string input = "WORLD, HELLO!";
+            int shift = 7;
+            string expected = "DVYSK, OLSSV!";
+
+            // Act
+            string result = Cipher.Encrypt(input, shift);
+
+            // Assert
+            Assert.Equal(expected, result);
+        }
+    
     }
 }
