@@ -1,0 +1,32 @@
+#Historia de Usuario No. 6
+*Abecedario recortado
+Como Usuario, necesito un cifrado César que cuente solo con las letras del abecedario inglés y utilice un desplazamiento del 1 al 9 para cumplir con las necesidades de mi empresa.
+
+#Descripción
+Crear un código que permita cifrar y descifrar texto utilizando el cifrado César, limitando las operaciones a las letras del abecedario inglés y empleando desplazamientos entre 1 y 9.
+
+#Criterios de Aceptación
+Funcionalidad Correcta
+El cifrado César debe funcionar correctamente únicamente con letras del abecedario inglés.
+No deben producirse errores relacionados con caracteres no alfabéticos.
+Uso Sencillo y Práctico
+El usuario debe poder ingresar un texto a cifrar o descifrar.
+Se debe permitir especificar un desplazamiento entre 1 y 9.
+El resultado del cifrado o descifrado debe mostrarse de manera clara y legible.
+#Prioridad
+Alta
+
+#Estimación
+1 día
+
+#Notas/Tareas Adicionales
+ Implementar manejo de caracteres no alfabéticos de manera eficiente.
+ Asegurar que las pruebas unitarias cubran todos los casos posibles.
+ Documentar adecuadamente el código y las funciones del cifrado César.
+
+#Discusiones
+- Discusión 1
+Se discutió la implementación del cifrado César limitado a un conjunto específico de caracteres.
+Se decidió utilizar un desplazamiento fijo entre 1 y 9 para cumplir con los requisitos del usuario y las necesidades de la empresa.
+#Historial de Cambios
+[2024/06/13] Cambio realizado por [Emiliano] - Abecedario recortado.
