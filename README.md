@@ -1,8 +1,5 @@
 # finalbase
 ## ALUMNOS
--Diego Lewensztain 
-
--Alejandro Ojeda
 
 -Leandro Miranda
 
